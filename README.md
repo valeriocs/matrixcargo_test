@@ -26,11 +26,11 @@ Aplicação criada com Vue CLI utilizando VueJs e Vuetify já no padrão de plug
 
 ### Como usar
 
-`cd client`
-`npm install`
-`npm run serve`
+1. `cd client`
+2. `npm install`
+3. `npm run serve`
 
-> Recomendado utilizar Node na versão v10.15.3 para evitar algum conflito com as depências do Vue CLI
+> Recomendado utilizar Node na versão v10.15.3 para evitar algum conflito com as dependências do Vue CLI
 
 ## Back-end
 
@@ -49,9 +49,9 @@ A query de entrada foi modelada através da classe [GitHubSearchQuery](./server/
 
 ### Como usar
 
-`cd server`
-`npm install`
-`npm start`
+1. `cd server`
+2. `npm install`
+3. `npm start`
 
 Aplicação configurada para rodar na porta 3000.
 
