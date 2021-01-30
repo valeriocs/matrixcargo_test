@@ -2,6 +2,17 @@
 
 Mvp básico com front e backend para consumo da API do Github para listagem de repositórios filtrados pela linguagem informada pelo usuário.
 
+
+- [Teste Matrix Cargo full-stack](#teste-matrix-cargo-full-stack)
+  - [Front-end](#front-end)
+    - [O que foi desenvolvido](#o-que-foi-desenvolvido)
+    - [Como usar](#como-usar)
+  - [Back-end](#back-end)
+    - [O que foi desenvolvido](#o-que-foi-desenvolvido-1)
+    - [Como usar](#como-usar-1)
+  - [TODO:](#todo)
+
+
 ## Front-end
 
 Aplicação criada com Vue CLI utilizando VueJs e Vuetify já no padrão de plugin, arquitetura de patas seguindo as boas práticas da comunidade.
@@ -15,8 +26,9 @@ Aplicação criada com Vue CLI utilizando VueJs e Vuetify já no padrão de plug
 
 ### Como usar
 
-1. npm install
-2. npm run serve
+`cd client`
+`npm install`
+`npm run serve`
 
 > Recomendado utilizar Node na versão v10.15.3 para evitar algum conflito com as depências do Vue CLI
 
@@ -37,7 +49,19 @@ A query de entrada foi modelada através da classe [GitHubSearchQuery](./server/
 
 ### Como usar
 
-1. npm install
-2. npm start
+`cd server`
+`npm install`
+`npm start`
 
 Aplicação configurada para rodar na porta 3000.
+
+## TODO:
+
+- [x] Interface web
+- [x] Api em NodeJs
+- [x] Repository Pattern
+- [x] Definição das models para consumo da API Github
+- [x] Configuração de MongoDB
+- [x] Coneção ao DB com Mongoose
+- [ ] Persistencia de cache no MongoDB
+- [ ] Testes unitários
