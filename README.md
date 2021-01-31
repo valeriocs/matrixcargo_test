@@ -2,7 +2,6 @@
 
 Mvp básico com front e backend para consumo da API do Github para listagem de repositórios filtrados pela linguagem informada pelo usuário.
 
-
 - [Teste Matrix Cargo full-stack](#teste-matrix-cargo-full-stack)
   - [Front-end](#front-end)
     - [O que foi desenvolvido](#o-que-foi-desenvolvido)
@@ -10,8 +9,8 @@ Mvp básico com front e backend para consumo da API do Github para listagem de r
   - [Back-end](#back-end)
     - [O que foi desenvolvido](#o-que-foi-desenvolvido-1)
     - [Como usar](#como-usar-1)
+    - [Testes unitários](#testes-unitários)
   - [TODO:](#todo)
-
 
 ## Front-end
 
@@ -54,6 +53,11 @@ A query de entrada foi modelada através da classe [GitHubSearchQuery](./server/
 3. `npm start`
 
 Aplicação configurada para rodar na porta 3000.
+
+### Testes unitários
+
+1. `cd server`
+2. `npm test`
 
 ## TODO:
 
