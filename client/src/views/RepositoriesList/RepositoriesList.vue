@@ -42,7 +42,7 @@ export default {
 
   data: () => ({
     loading: false,
-    selectedLanguage: 'javascript',
+    selectedLanguage: 'JavaScript',
     languages: [],
     headers: [],
     repositoresList: [],
