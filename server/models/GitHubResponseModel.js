@@ -1,4 +1,4 @@
-const GitHubRepoModel = require('./github-repositores-model')
+const GitHubRepoModel = require('./GitHubRepoModel')
 
 module.exports = class GitHubResponseModel {
     constructor({ total_count, items }) {

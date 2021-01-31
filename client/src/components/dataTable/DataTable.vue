@@ -7,25 +7,12 @@
       :items-per-page="pagination.perPage"
       class="elevation-1"
     >
-      <template
-        v-slot:[`item.fullName`]="{ item }"
-      >
-        <a :href="item.htmlHref">
-          {{ item.fullName.toUpperCase() }}
-        </a>
-      </template>
-      <template
-        v-slot:[`item.owner`]="{ item }"
-      >
-        <a :href="item.ownerHref">
-          {{ item.owner.toUpperCase() }}
-        </a>
-      </template>
+    <slot></slot>
       <template v-slot:top>
         <div
           class="overline text-center"
         >
-          We found {{ pagination.totalItems }} repositories by the selected language
+          We found {{ pagination.totalItems }} {{ resultLabel }}
         </div>
       </template>
     </v-data-table>
@@ -44,6 +31,10 @@ export default {
   name: 'List',
   props: {
     language: {
+      type: String,
+      required: true,
+    },
+    resultLabel: {
       type: String,
       required: true,
     },

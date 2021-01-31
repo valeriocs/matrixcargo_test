@@ -31,4 +31,9 @@ export default {
     };
     return http.get('/github-repositories', { params });
   },
+
+  getLanguages() {
+    return http.get('/languages');
+  },
+
 };

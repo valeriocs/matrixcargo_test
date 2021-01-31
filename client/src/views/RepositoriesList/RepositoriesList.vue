@@ -11,12 +11,28 @@
       </v-col>
       <v-col cols="12" v-if="!loading">
         <list
+          result-label="repositories by the selected language"
           :language="selectedLanguage"
           :items="repositoresList"
           :pagination="pagination"
           :headers="headers"
           v-model="pagination.page"
-        />
+        >
+         <template
+           v-slot:[`item.fullName`]="{ item }"
+          >
+            <a :href="item.htmlHref" target="_blank">
+            {{ item.fullName.toUpperCase() }}
+            </a>
+          </template>
+          <template
+            v-slot:[`item.owner`]="{ item }"
+          >
+            <a :href="item.ownerHref" target="_blank">
+              {{ item.owner.toUpperCase() }}
+            </a>
+          </template>
+        </list>
       </v-col>
       <v-col cols="12" v-else class="text-center">
         <v-progress-circular
@@ -31,7 +47,7 @@
 
 <script>
 import List from '@/components/dataTable/DataTable.vue';
-import Languages from '@/service/utils/languages';
+import localLanguages from '../../service/utils/languages';
 import service from './RepositoriesListService';
 
 export default {
@@ -69,8 +85,16 @@ export default {
       });
     },
 
+    languagesDataTransform(languages) {
+      return languages.map(({ name }) => name);
+    },
+
     getLanguages() {
-      this.languages = Languages;
+      service.getLanguages().then(({ data }) => {
+        this.languages = this.languagesDataTransform(data);
+      }).catch(() => {
+        this.languages = localLanguages;
+      });
     },
 
   },

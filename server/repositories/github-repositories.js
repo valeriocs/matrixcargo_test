@@ -1,5 +1,5 @@
 const { Octokit } = require("@octokit/rest");
-const GitHubResponseModel = require('../models/github-repositories-response-model');
+const GitHubResponseModel = require('../models/GitHubResponseModel');
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });

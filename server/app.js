@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const repositoryRoutes = require('./routes/github-repositores-route');
+const languagesRoutes = require('./routes/languages-route');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv/config');
@@ -13,6 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/github-repositories', repositoryRoutes);
+app.use('/languages', languagesRoutes);
 
 mongoose.connect(
     process.env.DB_CONNECTION,

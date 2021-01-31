@@ -1,5 +1,5 @@
 const repository = require('../repositories/github-repositories');
-const GitHubSearchQuery = require('../models/utils/github-repo-search-query');
+const GitHubSearchQuery = require('../models/utils/GitHubSearchQuery');
 
 exports.github_search_repos = async function (req) {
     const customReq = {
