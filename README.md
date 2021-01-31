@@ -30,7 +30,7 @@ Aplicação criada com Vue CLI utilizando VueJs e Vuetify já no padrão de plug
 2. `npm install`
 3. `npm run serve`
 
-> Recomendado utilizar Node na versão v10.15.3 para evitar algum conflito com as dependências do Vue CLI
+> Recomendado utilizar Node na versão v10.15.3 para evitar algum conflito com as dependências do Vue CLI, também foi testado na 12.2.0
 
 ## Back-end
 
