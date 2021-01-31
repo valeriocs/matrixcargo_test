@@ -64,4 +64,4 @@ Aplicação configurada para rodar na porta 3000.
 - [x] Configuração de MongoDB
 - [x] Coneção ao DB com Mongoose
 - [ ] Persistencia de cache no MongoDB
-- [ ] Testes unitários
+- [x] Testes unitários
