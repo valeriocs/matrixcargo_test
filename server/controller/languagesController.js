@@ -1,4 +1,4 @@
-const service = require('../services/languages-service');
+const service = require('../services/languagesService');
 
 exports.language_get_all = async function () {
     const dbResponse = await service.language_get_all();

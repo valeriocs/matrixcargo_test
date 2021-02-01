@@ -1,6 +1,6 @@
-const controller = require('../../../../controller/github-repositories-controller');
-const service = require('../../../../services/github-repositories-service');
-const repository = require('../../../../repositories/github-repositories');
+const controller = require('../../../../controller/githubRepositoriesController');
+const service = require('../../../../services/gitHubRepositoriesService');
+const repository = require('../../../../repositories/gitHubRepository');
 const query = require('../../../mocks/GitHubSearchQuery.mock');
 const response = require('../../../mocks/GitHubResponseModel.mock');
 

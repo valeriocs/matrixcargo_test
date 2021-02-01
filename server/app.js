@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const repositoryRoutes = require('./routes/github-repositores-route');
-const languagesRoutes = require('./routes/languages-route');
+const repositoryRoutes = require('./routes/githubRepositoriesRoute');
+const languagesRoutes = require('./routes/languagesRoute');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv/config');

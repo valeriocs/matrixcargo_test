@@ -1,6 +1,6 @@
-const controller = require('../../../../controller/languages-controller');
-const service = require('../../../../services/languages-service');
-const repository = require('../../../../repositories/languages-repository');
+const controller = require('../../../../controller/languagesController');
+const service = require('../../../../services/languagesService');
+const repository = require('../../../../repositories/languagesRepository');
 const { output } = require('../../../mocks/Languages.mock');
 
 

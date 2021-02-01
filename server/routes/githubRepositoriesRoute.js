@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const controllerInstance = require('../controller/github-repositories-controller');
+const controllerInstance = require('../controller/githubRepositoriesController');
 
 router.get('/', async (req, res) => {
   const response = controllerInstance.github_repo_search(req);

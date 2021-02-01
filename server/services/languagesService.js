@@ -1,4 +1,4 @@
-const repository = require('../repositories/languages-repository');
+const repository = require('../repositories/languagesRepository');
 
 exports.language_get_all = async function () {
     try {
